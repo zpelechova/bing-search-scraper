@@ -1,6 +1,7 @@
 # Bing Search Result Scraper
-## Features
-The following data can be extracted from Bing search result:
+
+## What does Bing Search Result Scraper do?
+Bing Search Result Scraper extracts the following data from Bing search results: 
 - Organic results
 - Related queries
 - See results for
@@ -9,45 +10,31 @@ The following data can be extracted from Bing search result:
 - Wiki results
 - News, Image, Video results
 
-## Cost of Usage
-Actor uses default proxy configuration to minimalize the chance of being blocked. Content and language does not depend on proxy location, since it can be set with input. <br />
-Usage depends on complexity of search results created by Bing. On average scraper set on default 10 results per page use 1 CU per 300 pages.
+## Why use Bing Search Result Scraper?
+Extracting data from Bing search results can help you to:
+- Consistently monitor how your website ranks on Bing SERPs for specific keywords.
+- Monitor competition automatically: both organic results and Ads section.
+- Analyze advertisement campaigns to sharpen the keyword targeting of your Bing Ads.
+- Improve the performance of your website content by applying the SEO insights needed to top the Bing SERP rankings.
+- Make data-backed decisions in your SEO strategy.
+- Follow demand and predict new trends by scraping *recommended searches, *Related queries, *See results for* and *People Also Ask*
 
-## Input
-### Search queries or URLs - ```queries```
-*Optional - String*
-<hr>
-Bing Search queries (e.g. food in NYC) and/or full URLs (e.g. https://www.bing.com/search?q=food+NYC). Enter one item per line.
+You can see our [industry pages](https://apify.com/industries) for more tangible ideas, use cases, or inspiration on how to use scraped Bing data in your business.
 
-### Results per page - ```resultsPerPage```
-*Optional - Integer*
-<hr>
-Number of search results per page. By default, Bing Search returns 10 results. The allowed values are between 1 and 100.
+## Is scraping Bing legal?
+Since scraping Bing and other search engines does not require a login, it is legal to scrape Bing search results as the data is publicly available. However, you may still be bound by the Bing terms of use. If you are unsure of the legal implications of your scraping, you can learn more in [Is web scraping legal?](https://blog.apify.com/is-web-scraping-legal/)
 
-### Max pages per query - ```maxPagesPerQuery```
-*Optional - Integer*
-<hr>
-The maximum number of search result pages crawled for each search query or URL. Note that a value greater than one might significantly slow down the actor.
+## How do you scrape Bing search results?
+To understand how to set up and run Bing Search Result Scraper, check out our step-by-step guide on [how to scrape Bing](https://blog.apify.com/how-to-scrape-bing-search-results/#how-to-scrape-bing-search-results) with screenshots and examples.
 
-### Market Code - ```marketCode```
-*Optional - String*
-Bing Search returns content for set market.
-<hr>
+## Integrations and Bing Search Result Scraper
+Bing Search Result Scraper can be connected with almost any cloud service or web app thanks to [integrations on the Apify platform](https://apify.com/integrations). Integrate with Make, Zapier, Slack, Airbyte, GitHub, Google Sheets, Google Drive, and more. Or you can use webhooks to carry out an action whenever an event occurs, e.g. get a notification whenever Bing Search Result Scraper successfully finishes a run.
 
-### Language - ```languageCode```
-Language for the search results.
-*Optional - String*
-<hr>
+## Using Bing Search Result Scraper with the Apify API
+The Apify API gives you programmatic access to the Apify platform. The API is organized around RESTful HTTP endpoints that enable you to manage, schedule, and run Apify actors. The API also lets you access any datasets, monitor actor performance, fetch results, create and update versions, and more.To access the API using Node.js, use the apify-client NPM package. To access the API using Python, use the apify-client PyPI package. Check out the [Apify API reference docs](https://docs.apify.com/api/v2) for full details or click on the [API tab](https://apify.com/spidoosho/bing-search-scraper/api#features) for code examples.
 
-### Proxy - ```proxyConfiguration```
-Sets up the proxies.
-*Optional - Object*
-<hr>
-
-### CSV friendliness - ```csvFriendliness```
-Remove results that are not CSV friendly.
-*Optional - boolean*
-<hr>
+## Input parameters
+The input for Bing Search Result Scraper should be JSON containing the search terms you want to scrape. Click on the [input tab](https://apify.com/spidoosho/bing-search-scraper/input-schema) for an input example.
 
 ## Results
 Actor stores its result in the default dataset associated with the run, which you can export to various formats.
